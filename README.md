@@ -1,27 +1,55 @@
-# AngularBasicFeatures
+# Angular Basic Features
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+## Folder Structure
 
-## Development server
+    app
+        core
+            guards
+            interceptors
+            services
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+        modules
+            (Grouping)
+            - Logic or Functionality
+            - Data
+            components (DUMB - Presentational)
+            models
+            pages (SMART - dedicate route in module, services)
 
-## Code scaffolding
+        shared (DUMB Components)
+            components
+            directives
+            models
+            pipes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Routes (Basic)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Component Interaction
 
-## Running unit tests
+Input
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Output
 
-## Running end-to-end tests
+Services
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+parent -> child
+child -> parent
+sibling -> sibling
 
-## Further help
+## Directives
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Structural Directives
+ngIf
+ngSwitch
+ngFor
+
+Attribute Directives
+ngStyle
+ngClass
+attribute directive
+
+## npm install
+
+## MVW
+Model View Whatever
