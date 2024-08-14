@@ -35,7 +35,7 @@ Services
 
 parent -> child
 child -> parent
-sibling -> sibling
+sibling -> sibling (sibling1 -> parent -> sibling2)
 
 ## Directives
 
@@ -47,7 +47,8 @@ ngFor
 Attribute Directives
 ngStyle
 ngClass
-attribute directive
+
+Custom directive
 
 ## npm install
 

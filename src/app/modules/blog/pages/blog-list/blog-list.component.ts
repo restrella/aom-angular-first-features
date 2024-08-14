@@ -7,11 +7,28 @@ import { Blog } from 'src/app/modules/models/blog';
   styleUrls: ['./blog-list.component.scss'],
 })
 export class BlogListComponent {
+  isCard = false;
+
+  width = '150px';
+  height = '200';
+  color = 'yellow';
+  num = 0;
+  numArrayIndex = [
+    'Zero',
+    'One',
+    'Two',
+    'Three',
+    'Four',
+    'Five',
+    'Six',
+    'Seven',
+  ];
+  numArray = [1, 2, 3, 4, 5, 6, 7, 8];
   blogs: Blog[] = [
     {
       title: 'Blog1',
       description: 'My Blog1',
-      published: false,
+      published: true,
       authorActive: true,
     },
     {
@@ -23,12 +40,28 @@ export class BlogListComponent {
     {
       title: 'Blog3',
       description: 'My Blog3',
-      published: true,
+      published: false,
       authorActive: true,
     },
   ];
 
-  executeAction = (blog: Blog) => {
-    console.log('printing from parent ' + blog.description);
+  executeAction = (blog: Blog, index: number) => {
+    console.log(
+      'printing from parent ' + blog.description + ' with index: ' + index
+    );
+  };
+
+  incrementNumber = () => {
+    this.num++;
+  };
+
+  changeCss = () => {
+    this.width = '200px';
+    this.height = '200px';
+    this.color = 'blue';
+  };
+
+  toggleClass = () => {
+    this.isCard = !this.isCard;
   };
 }
